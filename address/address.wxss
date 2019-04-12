@@ -1,0 +1,11 @@
+@import "../lib/weiui.wxss";
+.picker{
+    padding: 13px;
+    background-color: #FFFFFF;
+}
+open-data {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}

@@ -1,0 +1,114 @@
+<!--index.wxml-->
+
+<!-- <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>  -->
+
+
+<!-- --------------首页搜索 ------------->
+<!-- <scroll-view  style="height: 0px;"
+    scroll-y
+    bindscroll="scroll"
+    scroll-into-view="{{toView}}"
+    scroll-top="{{scrollTop}}"> -->
+  <view class="searchTop">
+  <view class="searchBox">
+    <view class="seachImg">
+      <image src="../images/searchImg.png" />
+    </view>
+    <view class="insearchBox">
+      <input type="text" name="shopNames" placeholder="请输入需要查找的商品" class="insearch" placeholder-style='color:#fff' bindinput='shop' />
+    </view>
+  </view>
+  <view class="searchSub" bindtap='searchBtn'>搜索</view>
+</view>
+<!-- </scroll-view> -->
+
+<!-------------首页轮播图-----------------  -->
+<view class='swiper'>
+  <swiper indicator-dots="{{indicatorDots}}" vertical="{{vertical}}" autoplay="{{autoplay}}" duration="{{duration}}" interval='{{interval}}'indicator-active-color="#007aff" bindchange="bindchange" circular="{{circular}}" style="height:{{imgheights[current]}}rpx;">
+    <block wx:for='{{imgUrls}}' wx:key="{{index}}">
+      <swiper-item>
+        <image src="{{item}}" data-id='{{index}}' class="slide-image" mode="widthFix" bindload="imageLoad" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!-- --------------一级分类----------------- -->
+<view class='container' id='conid'>
+  <view class='classificationBox'>
+    <view class='classification' wx:for='{{goods_firstList}}' wx:key='{{index}}' wx:for-index="index" wx:for-item="goods_firstList" bindtap='tabLine' data-postid='{{goods_firstList.id}}' data-postname='{{goods_firstList.first_name}}'>
+      <image src='../images/classifyImg{{index}}.png'></image>
+      <text>{{goods_firstList.first_name}}</text>
+    </view>
+    <!-- {{goods_firstList.category_icons}} -->
+    <!-- <view class='classification'>
+      <image src='../images/classifyImg6.png'></image>
+      <text>进口商品</text>
+    </view>
+    <view class='classification'>
+      <image src='../images/classifyImg9.png'></image>
+      <text>双创馆</text>
+    </view>
+    <view class='classification'>
+      <image src='../images/classifyImg0.png'></image>
+      <text>报单专区</text>
+    </view>
+    <view class='classification'>
+      <image src='../images/classifyImg7.png'></image>
+      <text>水墨丹青</text>
+    </view>
+    <view class='classification'>
+      <image src='../images/classifyImg2.png'></image>
+      <text>家居家装</text>
+    </view>
+    <view class='classification'>
+      <image src='../images/classifyImg3.png'></image>
+      <text>健康商城</text>
+    </view>
+    <view class='classification'>
+      <image src='../images/classifyImg5.png'></image>
+      <text>非遗景泰蓝</text>
+    </view>
+    <view class='classification'>
+      <image src='../images/classifyImg4.png'></image>
+      <text>生活用品</text>
+    </view>
+    <view class='classification'>
+      <image src='../images/classifyImg8.png'></image>
+      <text>积分商城</text>
+    </view> -->
+  </view>
+</view>
+<!-- 分割线 -->
+<view class='cut_off'></view>
+<!-- ----------福利区---------- -->
+<view class='gift_box'>
+  <image src='../images/gift_shops.png'></image>
+</view>
+<!-- ----------------新品上线-------- -->
+<view class='new_shop'>
+  <view class='new_box'>精品推荐</view>
+</view>
+<!-- ---------商品列表--------- -->
+<view class='shop_Box'>
+  <view class='shopBox' wx:for='{{con}}' wx:key='{{index}}' wx:for-index="index" wx:for-item="con">
+    <view class='shopImg'>
+      <image src='{{con.image1}}' />
+    </view>
+    <view class='shopName'>{{con.shopName}}</view>
+    <view class='shopMessage'>
+      <view class='shops'>
+        <text class='shopPrice'>￥{{con.price}}</text>
+        <text class='markPrice'>￥{{con.markPrice}}</text>
+      </view>
+    </view>
+  </view>
+</view>

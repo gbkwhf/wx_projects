@@ -1,0 +1,25 @@
+<!-- !--手机绑定的页面  --> 
+<view class="userBindXian"></view>
+
+<view class="userBindBox">
+
+   <view class="in1">
+           <input type="text" placeholder="请输入手机号" id="phoneNum" bindblur="bindKeyInput" />
+  </view>
+  <view class="in2">
+        <input type="text" placeholder="请输入验证码" value=""  bindtap="bindKeyCodet"  bindblur='yzmBlur'/>
+         <button bindtap="tapName" id="btnSendCode" disabled="{{yazBut}}"><text>{{yzmFont}}</text></button>
+  </view>
+        <button   loading="{{loading}}" bindtap="setLoading" class="btn"  disabled="{{disabled}}">提交</button> 
+</view>
+<view class="userSha" wx:if="{{userToggle}}">
+<view class="phoneUserCl">该手机号已被使用</view>
+</view>
+
+<view class="userSha"  wx:if="{{errToggle}}">
+<view class="phoneUserCl">手机号码输入错误</view>
+</view>
+
+<view class="userSha"  wx:if="{{codeToggle}}">
+<view class="phoneUserCl">验证码错误</view>
+</view>

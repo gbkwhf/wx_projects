@@ -1,0 +1,93 @@
+.userBindXian{
+  width: 100%;
+  border-bottom: solid 1rpx #e6e6e6;
+}
+
+.userBindBox{
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  padding-top: 50rpx;
+}
+.userBindBox .in1 input{
+  width: 668rpx;
+  height: 88rpx;
+  border: solid 1rpx #d9d9d9;
+  padding-left: 20rpx;
+  color: #000000;
+    font-size: 28rpx;
+}
+.userBindBox .in2{
+  width: 688rpx;
+  height: 88rpx;
+  border: solid 1rpx #d9d9d9;
+  margin-top: 30rpx;
+}
+.userBindBox .in2 input{
+   height: 88rpx;
+    padding-left: 20rpx;
+    width: 400rpx;
+    float: left;
+    color: #000000;
+    font-size: 28rpx;
+}
+.userBindBox .in2 button{
+  width: 200rpx;
+  height: 54rpx;
+  color: #ffffff;
+  line-height: 54rpx;
+  background-color:#9b69fe;
+  border-radius: 8rpx; 
+  float: left;
+  font-size: 24rpx;
+  margin-top: 20rpx;
+  margin-left: 45rpx;
+}
+.userBindBox .btn{
+   width: 690rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  color: #fefefe;
+  font-size: 30rpx;
+  border-radius: 8rpx;
+  background-color: #9b69fe; 
+  margin-top: 50rpx;
+
+} 
+/* #btnSendCode{
+  opacity: .7
+} */
+
+/*弹出样式  */
+.userSha{
+    width:100%;
+    height:100%;
+    position: fixed;
+    left:0;
+    top:0;
+    bottom: 0;
+    right:0;
+    background: rgba(0,0,0,.0);
+    z-index: 400;
+}
+
+
+.phoneUserCl{
+  margin: 60% auto;
+      width: 286rpx;
+      height: 70rpx;
+      background-color: #000000;
+      opacity: .7;
+      font-size: 24rpx;
+      color: #fefefe;
+      line-height: 70rpx;
+      border-radius: 8rpx;
+      text-align: center
+}
+
+
+button[disabled][type="default"], wx-button[disabled]:not([type]) {
+      background-color:#9b69fe;
+      color:#fefefe;
+      opacity: .3
+}

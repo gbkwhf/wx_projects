@@ -1,0 +1,23 @@
+<!-- --------二级分类--------- -->
+<view class='moreBoxs'>
+  <scroll-view class="navContent" scroll-x>
+    <view class="classify  {{first_id==index?'addStyleMi':''}}" bindtap="menuClick" wx:for='{{first_names}}' wx:key='{{index}}' wx:for-item="first_names" wx:for-index="index" data-postid='{{first_names.id}}' data-index='{{index}}' data-postname='{{first_names.goods_name}}'>
+      <text>{{first_names.goods_name}}</text>
+    </view>
+  </scroll-view>
+</view>
+<!-- ---------商品列表--------- -->
+<view class='shop_Box'>
+  <view class='shopBox' wx:for='{{con}}' wx:key='{{index}}' wx:for-index="index" wx:for-item="con">
+    <view class='shopImg'>
+      <image src='{{con.image1}}' />
+    </view>
+    <view class='shopName'>{{con.shopName}}</view>
+    <view class='shopMessage'>
+      <view class='shops'>
+        <text class='shopPrice'>￥{{con.price}}</text>
+        <text class='markPrice'>￥{{con.markPrice}}</text>
+      </view>
+    </view>
+  </view>
+</view>

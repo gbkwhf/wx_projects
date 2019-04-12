@@ -1,0 +1,133 @@
+/* 1rpx = 0.5px = 1物理像素。 */
+/* 分类开始 */
+.moreBoxs{
+    width: 100%;
+    height: 102rpx;
+    border-bottom: solid 2rpx #e5e5e5;
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 500;
+}
+
+.navContent{
+    width: 100%;
+    height: 102rpx;
+    white-space: nowrap;
+}
+.classify {
+	height: 102rpx;
+	/*width: 8%;*/
+	margin-left: 42rpx;
+	line-height: 102rpx;
+	text-align: center;
+	
+	font-size: 28rpx;
+  display: inline-block;
+}
+
+.addStyleMi {
+	height: 96rpx;
+	border-bottom: solid 6rpx #eb3737;
+	font-weight: bold;
+	color: #eb3737;
+	font-size: 28rpx;
+}
+/* ---------隐藏滚动条 */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+ 
+/*--------商品信息-----*/
+
+.shop_Box {
+  min-height: 200rpx;
+  margin-bottom: 120rpx;
+  background: #f5f5f5;
+  overflow: auto;
+  margin-top: 102rpx;
+}
+
+.shopBox {
+  /*clear: both;*//*margin-top: 15px;*/
+  width: 46%;
+  /* height: 276px; *//*border-right: solid 2px #e5e5e5;
+    border-top: solid 2px #e5e5e5;*/
+  overflow: auto;
+  float: left;
+  background-color: #fff;
+  margin: 0rpx 10rpx 20rpx 20rpx;
+  /*margin-bottom: 15px;*/
+}
+
+.shopBox:nth-child(even) {
+  border-right: none;
+  width: 46%;
+  margin: 0rpx 10rpx 20rpx 10rpx;
+}
+
+/* .shopBox:nth-child(1) {
+  margin-top: 20rpx;
+}
+
+.shopBox:nth-child(2) {
+  margin-top: 20rpx;
+} */
+
+.shopImg {
+  width: 100%;
+  height: 230rpx;
+  margin: 0 auto;
+}
+
+.shopImg image {
+  width: 100%;
+  height: 230rpx;
+  margin: 0 auto;
+  /* margin-top: 15px;*/
+}
+
+.shopName {
+  height: 40rpx;
+  padding: 30rpx 40rpx 40rpx 24rpx;
+  line-height: 40rpx;
+  font-size: 24rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* white-space: nowrap; */
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  text-align: left;
+}
+
+.shopMessage {
+  height: 54rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.shops {
+  float: left;
+}
+
+.shopPrice {
+  color: #ec4444;
+  padding-left: 24rpx;
+  font-size: 28rpx;
+}
+
+.fan {
+  color: #acacac;
+  font-size: 24rpx;
+  padding-left: 22rpx;
+}
+
+.markPrice {
+  text-decoration-line: line-through;
+  color: #acacac;
+  font-size: 28rpx;
+  padding-left: 20rpx;
+}

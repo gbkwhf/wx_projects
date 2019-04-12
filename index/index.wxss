@@ -1,0 +1,283 @@
+/**index.wxss**/
+
+/* .userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+} */
+
+/*---------------搜索框----------  */
+::-webkit-scrollbar {
+			display: none;
+		}
+.searchTop {
+  height: 130rpx;
+  width: 100%;
+  /*top: 0;
+	bottom: 80px;*//*background-color: #ffffff;*//*position: absolute;*/
+  z-index: 1000;
+  position: fixed;
+}
+
+.active {
+  background-color: #fff;
+}
+
+.searchBox {
+  width: 79%;
+  height: 60rpx;
+  margin-left: 38rpx;
+  margin-top: 32rpx;
+  border-radius: 40rpx;
+  /*border: solid 1px #bfbfbf;*/
+  float: left;
+  margin-bottom: 28rpx;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.seachImg {
+  float: left;
+}
+
+.seachImg image {
+  width: 26rpx;
+  height: 26rpx;
+  margin-left: 30rpx;
+  margin-top: 16rpx;
+}
+
+.insearchBox {
+  float: left;
+  width: 85%;
+  margin-left: 10rpx;
+}
+
+.insearchBox input {
+  background-color: transparent;
+}
+
+.insearch {
+  height: 60rpx;
+  width: 90%;
+  line-height: 60rpx;
+  outline: none;
+  border: none;
+  padding-left: 5px;
+  font-size: 28rpx;
+}
+
+.searchSub {
+  font-size: 28rpx;
+  color: #fff;
+  line-height: 60rpx;
+  float: right;
+  padding-top: 32rpx;
+  padding-right: 30rpx;
+}
+
+.insearchs {
+  color: red;
+}
+
+/*-----------轮播图-------  */
+
+.swiper image {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-image {
+  height: 100%;
+  width: 100%;
+}
+
+.slide-image {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+/* --------商品分类--------- */
+
+.container {
+  clear: both;
+  padding: 2rpx 24rpx;
+}
+
+.classificationBox {
+  overflow: hidden;
+  width: 100%;
+}
+
+.classification {
+  float: left;
+  width: 20%;
+  text-align: center;
+  margin-top: 42rpx;
+}
+
+.classification image {
+  width: 92rpx;
+  height: 92rpx;
+  margin: 0 auto;
+  vertical-align: top;
+}
+
+.classification text {
+  font-style: normal;
+  font-size: 24rpx;
+  color: #4d4d4d;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 18rpx;
+}
+
+/* -----------分割线---------- */
+
+.cut_off {
+  height: 12rpx;
+  background-color: #f3f2f2;
+  margin-top: 20rpx;
+}
+
+/* ---------福利区---------- */
+
+.gift_box {
+  width: 92%;
+  margin: 0 auto;
+  margin-top: 30rpx;
+}
+
+.gift_box image {
+  height: 170rpx;
+  width: 100%;
+}
+
+/* ----------新品上线-------- */
+
+.new_shop {
+  margin-top: 40rpx;
+  height: 54rpx;
+}
+
+.new_box {
+  float: left;
+  width: 198rpx;
+  height: 54rpx;
+  text-align: center;
+  line-height: 54rpx;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMUAAAA2CAYAAAB3Pl1HAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA39pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo2YTRlYjNmNS0zY2ZmLTgxNDItODU0Zi1lYmNjOTYwZWRlM2QiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MTQ4QTdFQTgxQzVDMTFFODk1MkFEREMxMTAzMDk5RDIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MTQ4QTdFQTcxQzVDMTFFODk1MkFEREMxMTAzMDk5RDIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjExM2EwZTI0LWFhOWMtOGU0Mi1iZmRmLWNlZGJiY2U4N2JjZCIgc3RSZWY6ZG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOjJhODdhYjU3LTAxYWUtMTFlOC1iNjMwLTlkZDM5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');
+  background-size: 100% 100%;
+  margin-left: 276rpx;
+  /* margin-top: 23px; */
+  color: #333;
+  font-size: 28rpx;
+}
+
+/*--------商品信息-----*/
+
+.shop_Box {
+  min-height: 200rpx;
+  margin-bottom: 120rpx;
+  background: #f5f5f5;
+  overflow: auto;
+  margin-top: 34rpx;
+}
+
+.shopBox {
+  /*clear: both;*//*margin-top: 15px;*/
+  width: 46%;
+  /* height: 276px; *//*border-right: solid 2px #e5e5e5;
+    border-top: solid 2px #e5e5e5;*/
+  overflow: auto;
+  float: left;
+  background-color: #fff;
+  margin: 0rpx 10rpx 20rpx 20rpx;
+  /*margin-bottom: 15px;*/
+}
+
+.shopBox:nth-child(even) {
+  border-right: none;
+  width: 46%;
+  margin: 0rpx 10rpx 20rpx 10rpx;
+}
+
+.shopBox:nth-child(1) {
+  margin-top: 20rpx;
+}
+
+.shopBox:nth-child(2) {
+  margin-top: 20rpx;
+}
+
+.shopImg {
+  width: 100%;
+  height: 230rpx;
+  margin: 0 auto;
+}
+
+.shopImg image {
+  width: 100%;
+  height: 230rpx;
+  margin: 0 auto;
+  /* margin-top: 15px;*/
+}
+
+.shopName {
+  height: 40rpx;
+  padding: 30rpx 40rpx 40rpx 24rpx;
+  line-height: 40rpx;
+  font-size: 24rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* white-space: nowrap; */
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  text-align: left;
+}
+
+.shopMessage {
+  height: 54rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.shops {
+  float: left;
+}
+
+.shopPrice {
+  color: #ec4444;
+  padding-left: 24rpx;
+  font-size: 28rpx;
+}
+
+.fan {
+  color: #acacac;
+  font-size: 24rpx;
+  padding-left: 22rpx;
+}
+
+.markPrice {
+  text-decoration-line: line-through;
+  color: #acacac;
+  font-size: 28rpx;
+  padding-left: 20rpx;
+}
